@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+// COLOR variables
+$text-color: #000
+$bg-color: #fff
+$head-color: #fff
+$head-bg: #2980b9
+
+// FONT variables
+$basic-font: 'Open Sans', sans-serif
+
+//MIXINS
+=translate($posX, $posY)
+    -ms-transform: translate($posX, $posY)
+    -webkit-transform: translate($posX, $posY)
+    transform: translate($posX, $posY)
+
+// GLOBAL styles
+*
+    box-sizing: border-box
+body 
+    margin: 0
+    font-family: $basic-font
+    color: $text-color
+    background: $bg-color
+.show
+    display: block
+/* HEADER */
+main
+    h1
+        margin: 30px 0
+        line-height: 1.5em
+    #js-startGame
+        padding: 20px 80px
+        margin: 30px
+    #js-gameControl
+        padding: 50px 0
+    h2
+        font-size: 30px
+    #js-winnerName
+        font-weight: bold
+    #js-gameTable
+        padding: 50px 0
+        .row
+            margin: 15px 0
+        [class*="col-"]
+            padding: 0 20px
+        #js-infoBar
+            font-size: 16px
+        .score-board
+            margin-top: 50px
+        .score
+            span
+                font-size: 30px
+        .player-name
+            font-weight: bold
+            font-size: 16px
