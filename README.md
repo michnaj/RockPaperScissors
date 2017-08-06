@@ -1,3 +1,3 @@
 # RockPaperScissors
-Rock, Papers, Scissors - The Game
-Used: Boostrap, FontAwesome, Sass, JavaScript
+<h2>Rock, Papers, Scissors - The Game</h2>
+<p>Used: Boostrap, FontAwesome, Sass, JavaScript</p>
