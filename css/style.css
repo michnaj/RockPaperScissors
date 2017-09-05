@@ -11,38 +11,64 @@ body {
 .show {
   display: block; }
 
-/* HEADER */
-main h1 {
-  margin: 30px 0;
-  line-height: 1.5em; }
-
-main #js-startGame {
-  padding: 20px 80px;
-  margin: 30px; }
-
-main #js-gameControl {
-  padding: 50px 0; }
-
-main h2 {
-  font-size: 30px; }
-
-main #js-winnerName {
-  font-weight: bold; }
-
-main #js-gameTable {
-  padding: 50px 0; }
-  main #js-gameTable .row {
-    margin: 15px 0; }
-  main #js-gameTable [class*="col-"] {
-    padding: 0 20px; }
-  main #js-gameTable #js-infoBar {
-    font-size: 16px; }
-  main #js-gameTable .score-board {
-    margin-top: 50px; }
-  main #js-gameTable .score span {
+/* MAIN */
+main {
+  background: url(../images/bg.jpg) center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 24px; }
+  main h1 {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 30px 0;
+    line-height: 1.5em;
+    border-radius: 10px; }
+  main #js-startGame {
+    padding: 20px 80px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px #fff; }
+  main #js-gameControl {
+    padding: 50px 0; }
+  main h2 {
     font-size: 30px; }
-  main #js-gameTable .player-name {
-    font-weight: bold;
-    font-size: 16px; }
+  main #js-winnerName {
+    font-weight: bold; }
+  main #js-gameTable {
+    padding: 50px 0; }
+    main #js-gameTable .row {
+      margin: 15px 0; }
+    main #js-gameTable [class*="col-"] {
+      padding: 0 20px; }
+    main #js-gameTable #js-infoBar {
+      font-size: 16px; }
+    main #js-gameTable [id*="js-player"].btn {
+      box-shadow: 0px 0px 10px #fff;
+      margin-bottom: 5px; }
+    main #js-gameTable .score-board {
+      margin-top: 50px; }
+    main #js-gameTable .score span {
+      font-size: 40px; }
+    main #js-gameTable .player-name {
+      font-weight: bold;
+      font-size: 16px; }
+    main #js-gameTable #js-playerChoise .fa,
+    main #js-gameTable #js-computerChoise .fa {
+      padding: 10px;
+      border: 2px solid #000;
+      background: rgba(255, 255, 255, 0.6) !important;
+      border-radius: 20px; }
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 24px; }
+  footer .js-footerbg {
+    display: inline-block;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px 0 0; }
 
 /*# sourceMappingURL=style.css.map */
