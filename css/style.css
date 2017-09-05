@@ -51,12 +51,19 @@ main {
     main #js-gameTable .player-name {
       font-weight: bold;
       font-size: 16px; }
-    main #js-gameTable #js-playerChoise .fa,
-    main #js-gameTable #js-computerChoise .fa {
-      padding: 10px;
-      border: 2px solid #000;
-      background: rgba(255, 255, 255, 0.6) !important;
-      border-radius: 20px; }
+    main #js-gameTable #js-playerChoise,
+    main #js-gameTable #js-computerChoise {
+      min-height: 80px; }
+      main #js-gameTable #js-playerChoise .fa,
+      main #js-gameTable #js-computerChoise .fa {
+        padding: 10px;
+        border: 2px solid #000;
+        background: rgba(255, 255, 255, 0.6) !important;
+        border-radius: 20px; }
+
+@media (max-width: 479px) {
+  main h1 {
+    font-size: 26px; } }
 
 /* FOOTER */
 footer {
